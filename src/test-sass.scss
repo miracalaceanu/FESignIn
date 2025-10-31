@@ -1,0 +1,34 @@
+// Test SCSS file to verify Dart Sass is working
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+.test-sass {
+  color: $primary-color;
+  background-color: lighten($secondary-color, 20%);
+  
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+// Nested rules test
+.navigation {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { 
+    display: inline-block; 
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
