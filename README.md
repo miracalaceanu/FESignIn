@@ -1,3 +1,13 @@
+#node-modules isn't uploaded
+Because a .gitignore is generated when you generate a project, and it contains the line that excludes the node_modules repository from being pushed.
+
+This is done because the folder can be very heavy (several hundreds of Mb), and it would cause your pushes to be very long, and not up-to-date with your semver.
+
+If other users want to run your project locally, they will have to run npm i before ng serve. That's widely accepted as a standard.
+clone your repository
+run "npm -i"
+ng serve
+
 # CompareMyself
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
